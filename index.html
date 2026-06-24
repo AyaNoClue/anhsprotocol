@@ -1275,16 +1275,16 @@
                 window.state.studentName = input;
                 window.state.chessComConnected = true;
 
-                // Grant 5000 Private Points specifically to Byakurai_987 upon successful sync
+                // Grant 10000 Private Points specifically to Byakurai_987 upon successful sync
                 if (input.toLowerCase() === 'byakurai_987') {
                     if (!window.state.byakuraiBonusClaimed) {
-                        window.state.privatePoints += 5000;
+                        window.state.privatePoints += 10000;
                         window.state.byakuraiBonusClaimed = true;
-                        logTerminal("Special Direct Allowance mapping initiated: +5,000 PP allocated to Byakurai_987.", "success");
+                        logTerminal("Special Direct Allowance mapping initiated: +10,000 PP allocated to Byakurai_987.", "success");
                     }
                 } else {
                     if (window.state.byakuraiBonusClaimed) {
-                        window.state.privatePoints -= 5000;
+                        window.state.privatePoints -= 10000;
                         window.state.byakuraiBonusClaimed = false;
                         logTerminal("Special Direct Allowance mapping revoked: Account parameters shifted.", "error");
                     }
